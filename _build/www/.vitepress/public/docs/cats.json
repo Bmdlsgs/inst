@@ -1,10 +1,24 @@
 {
   "categories": [
     {
+      "id": "instintro",
+      "title": "instintro",
+      "icon": "📚",
+      "sort_order": 1,
+      "items": [
+        {
+          "id": "instintro-intro",
+          "slug": "intro",
+          "title": "intro",
+          "icon": "📄"
+        }
+      ]
+    },
+    {
       "id": "instrepos",
       "title": "instrepos",
       "icon": "📦",
-      "sort_order": 1,
+      "sort_order": 2,
       "items": [
         {
           "id": "instrepos-1keydd",
@@ -60,7 +74,7 @@
       "id": "instnews",
       "title": "instnews",
       "icon": "📰",
-      "sort_order": 2,
+      "sort_order": 3,
       "items": [
         {
           "id": "instnews-cleanuipve",

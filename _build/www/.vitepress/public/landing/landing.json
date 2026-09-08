@@ -4,7 +4,7 @@
     "subtitle": "lifelong linux and onekeystoke netinstall script/panel/appstore",
     "ctas": [
       { "text": "开始使用", "link": "https://p.inst.sh", "primary": true },
-      { "text": "更多文档", "link": "/docs", "primary": false }
+      { "text": "更多文档", "link": "/docs.html#/instintro-intro", "primary": false }
     ],
     "image": "https://raw.githubusercontent.com/minlearn/inst/master/_build/www/assets/instcf.png"
   },
@@ -66,6 +66,7 @@
       "period": "终身",
       "cta": "立即加入",
       "link": "#supportly",
+      "widgetChannelId": "supportly-widget-ch_04b307667f6c0225062b42347907191f-frame",
       "features": [
         "基础脚本库",
         "公开文档",
@@ -76,5 +77,6 @@
         "专属资源配置"
       ]
     }
-  }
+  },
+  "quote": "本项目采用捐助开发模式，本人长期接脚本二次功能开发/有偿付费dd/定制dd镜像服务/定制app服务，价格各60元/10U起，不成功不收费，可送加群资格"
 }

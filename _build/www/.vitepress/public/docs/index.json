@@ -1,10 +1,24 @@
 {
   "categories": [
     {
+      "id": "instintro",
+      "title": "instintro",
+      "icon": "📚",
+      "sort_order": 1,
+      "items": [
+        {
+          "id": "instintro-intro",
+          "slug": "intro",
+          "title": "intro",
+          "icon": "📄"
+        }
+      ]
+    },
+    {
       "id": "instrepos",
       "title": "instrepos",
       "icon": "📦",
-      "sort_order": 1,
+      "sort_order": 2,
       "items": [
         {
           "id": "instrepos-1keydd",
@@ -60,7 +74,7 @@
       "id": "instnews",
       "title": "instnews",
       "icon": "📰",
-      "sort_order": 2,
+      "sort_order": 3,
       "items": [
         {
           "id": "instnews-cleanuipve",
@@ -205,6 +219,17 @@
     }
   ],
   "cards": [
+    {
+      "id": "instintro-intro",
+      "slug": "intro",
+      "title": "intro",
+      "icon": "📄",
+      "desc": "",
+      "tags": [
+        "文档"
+      ],
+      "lastUpdated": "2026-09-08"
+    },
     {
       "id": "instnews-cleanuipve",
       "slug": "cleanuipve",
@@ -456,7 +481,7 @@
       "tags": [
         "文档"
       ],
-      "lastUpdated": "2026-09-06"
+      "lastUpdated": "2026-09-08"
     },
     {
       "id": "instrepos-bin456789",
@@ -467,7 +492,7 @@
       "tags": [
         "文档"
       ],
-      "lastUpdated": "2026-09-06"
+      "lastUpdated": "2026-09-08"
     },
     {
       "id": "instrepos-linuxlive",
@@ -478,7 +503,7 @@
       "tags": [
         "文档"
       ],
-      "lastUpdated": "2026-09-06"
+      "lastUpdated": "2026-09-08"
     },
     {
       "id": "instrepos-natee",
@@ -489,7 +514,7 @@
       "tags": [
         "文档"
       ],
-      "lastUpdated": "2026-09-06"
+      "lastUpdated": "2026-09-08"
     },
     {
       "id": "instrepos-osxdmgs",
@@ -500,7 +525,7 @@
       "tags": [
         "文档"
       ],
-      "lastUpdated": "2026-09-06"
+      "lastUpdated": "2026-09-08"
     },
     {
       "id": "instrepos-teddysun",
@@ -511,7 +536,7 @@
       "tags": [
         "文档"
       ],
-      "lastUpdated": "2026-09-06"
+      "lastUpdated": "2026-09-08"
     },
     {
       "id": "instrepos-wikihost",
@@ -522,7 +547,7 @@
       "tags": [
         "文档"
       ],
-      "lastUpdated": "2026-09-06"
+      "lastUpdated": "2026-09-08"
     },
     {
       "id": "instrepos-windowsisos",
@@ -533,10 +558,22 @@
       "tags": [
         "文档"
       ],
-      "lastUpdated": "2026-09-06"
+      "lastUpdated": "2026-09-08"
     }
   ],
   "docs": {
+    "instintro-intro": {
+      "id": "instintro-intro",
+      "slug": "intro",
+      "title": "intro",
+      "subtitle": "",
+      "icon": "📄",
+      "tags": [
+        "文档"
+      ],
+      "lastUpdated": "2026-09-08",
+      "category": "instintro"
+    },
     "instnews-cleanuipve": {
       "id": "instnews-cleanuipve",
       "slug": "cleanuipve",
@@ -810,7 +847,7 @@
       "tags": [
         "文档"
       ],
-      "lastUpdated": "2026-09-06",
+      "lastUpdated": "2026-09-08",
       "category": "instrepos"
     },
     "instrepos-bin456789": {
@@ -822,7 +859,7 @@
       "tags": [
         "文档"
       ],
-      "lastUpdated": "2026-09-06",
+      "lastUpdated": "2026-09-08",
       "category": "instrepos"
     },
     "instrepos-linuxlive": {
@@ -834,7 +871,7 @@
       "tags": [
         "文档"
       ],
-      "lastUpdated": "2026-09-06",
+      "lastUpdated": "2026-09-08",
       "category": "instrepos"
     },
     "instrepos-natee": {
@@ -846,7 +883,7 @@
       "tags": [
         "文档"
       ],
-      "lastUpdated": "2026-09-06",
+      "lastUpdated": "2026-09-08",
       "category": "instrepos"
     },
     "instrepos-osxdmgs": {
@@ -858,7 +895,7 @@
       "tags": [
         "文档"
       ],
-      "lastUpdated": "2026-09-06",
+      "lastUpdated": "2026-09-08",
       "category": "instrepos"
     },
     "instrepos-teddysun": {
@@ -870,7 +907,7 @@
       "tags": [
         "文档"
       ],
-      "lastUpdated": "2026-09-06",
+      "lastUpdated": "2026-09-08",
       "category": "instrepos"
     },
     "instrepos-wikihost": {
@@ -882,7 +919,7 @@
       "tags": [
         "文档"
       ],
-      "lastUpdated": "2026-09-06",
+      "lastUpdated": "2026-09-08",
       "category": "instrepos"
     },
     "instrepos-windowsisos": {
@@ -894,7 +931,7 @@
       "tags": [
         "文档"
       ],
-      "lastUpdated": "2026-09-06",
+      "lastUpdated": "2026-09-08",
       "category": "instrepos"
     }
   }
