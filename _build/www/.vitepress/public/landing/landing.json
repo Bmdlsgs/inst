@@ -4,7 +4,7 @@
     "subtitle": "lifelong linux and onekeystoke netinstall script/panel/appstore",
     "ctas": [
       { "text": "开始使用", "link": "https://p.inst.sh", "primary": true },
-      { "text": "更多文档", "link": "/docs.html#/instintro-intro", "primary": false }
+      { "text": "更多文档", "link": "/docs/#/instintro-intro", "primary": false }
     ],
     "image": "https://raw.githubusercontent.com/minlearn/inst/master/_build/www/assets/instcf.png"
   },
@@ -56,8 +56,7 @@
       "features": [
         "基础脚本库",
         "公开文档",
-        "基础面板",
-        "手动更新"
+        "基础面板"
       ]
     },
     "paid": {
@@ -71,9 +70,9 @@
         "基础脚本库",
         "公开文档",
         "基础面板",
-        "手动更新",
         "社区支持",
         "定制镜像",
+        "精细到厂商机型的DD方案",
         "专属资源配置"
       ]
     }

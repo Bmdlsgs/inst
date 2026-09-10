@@ -23,7 +23,7 @@ inst.sh支持linux/windows/osx三平台,支持多provision引擎和目标(remote
 inst支持一键dd其它多种os和为这些os(目前仅debian)注入多种应用，配合这些应用，可以将这些os做成路由器，做成programmable nas，，做成sidebar os, 做成青龙，做成allinone,做成btpanel,,做成安卓群控,做成devops,做成serverless cli  
 
 inst支持扩展，支持定制接入无限增加的机型和系统，以及应用，应用和注入应用方法，具体见下面的用法说明：   
-> 更多演示和特性请看和项目文档库[《https://inst.sh》](https://minlearn.org/inst/)
+> 更多演示和特性请看和项目文档库[《https://inst.sh》](https://www.inst.sh)
 
 
 
@@ -90,26 +90,26 @@ curl -sSL inst.sh|bash -s - -选项名 选项值           -t 目标值
 | redis            | ...          | ...        | ...         | ...      | ...  | 
 | mariadb          | ...          | ...        | ...         | ...      | ...  | 
 
-> 更多第三方dd镜像仓库和应用仓库[《https://inst.sh》](https://minlearn.org/inst/)  
+> 更多第三方dd镜像仓库和应用仓库[《https://inst.sh》](https://www.inst.sh)  
 
 其它用法:  
 
- * 本地模式,将inst仓库下载并解压到vps，将镜像文件放在inst目录下，下例将debian11.gz作为本地镜像恢复安装到本地（安装演示：[localinstall](https://minlearn.org/inst/instnews/localinstall) ）  
+ * 本地模式,将inst仓库下载并解压到vps，将镜像文件放在inst目录下，下例将debian11.gz作为本地镜像恢复安装到本地（安装演示：[localinstall](https://www.inst.sh/docs/#/instnews-localinstall) ）  
 `bash inst.sh -t ./debian11.gz`  
 
- * 打包模式,一键打包硬盘(也可仅打包一个分区)，可供恢复模式用,此模式下不破坏硬盘原系统仅实现打包服务,下例将vps上的/dev/sda透露为该vps 10000端口托管的http .gz包（安装演示：[nc](https://minlearn.org/inst/instnews/nc) ）  
+ * 打包模式,一键打包硬盘(也可仅打包一个分区)，可供恢复模式用,此模式下不破坏硬盘原系统仅实现打包服务,下例将vps上的/dev/sda透露为该vps 10000端口托管的http .gz包（安装演示：[nc](https://www.inst.sh/docs/#/instnews-nc) ）  
 `curl -sSL inst.sh|bash -s - -t 10000:/dev/sda`  
 
- * nat模式,将内网ip的系统转化成公网可访问的系统, 下例3389为将本地windows rdp端口转发到10.211.55.4所在的配置对应口（安装演示：[natproxy](https://minlearn.org/inst/instnews/natproxy) ）  
+ * nat模式,将内网ip的系统转化成公网可访问的系统, 下例3389为将本地windows rdp端口转发到10.211.55.4所在的配置对应口（安装演示：[natproxy](https://www.inst.sh/docs/#/instnews-natproxy) ）  
 `curl -sSL inst.sh|bash -s - -o 3389:10.211.55.4 -t yourwindowsgz`  
 
- * cmdslip模式,将''包裹的一条命令字串注入到安装好的debian, 下例--cmd为安装好的debian启动后安装默认桌面（安装演示：[cmdslip](https://minlearn.org/inst/instnews/cmdslip) ）  
+ * cmdslip模式,将''包裹的一条命令字串注入到安装好的debian, 下例--cmd为安装好的debian启动后安装默认桌面（安装演示：[cmdslip](https://www.inst.sh/docs/#/instnews-cmdslip) ）  
 `curl -sSL inst.sh|bash -s - --cmd 'tasksel install desktop' -t debian`  
 
  * 开启自带DEBUG模式，此模式dd时打开一个network-console,且如无网络5分钟后会重启,并进入DD前的正常系统。免破坏系统。可免写target进入dummy Dryrun救援，也可附在其它target后dd出问题时进入ssh调试，甚至开启nat支持(参照上面nat模式解释)  
 `curl -sSL inst.sh|bash -s - -d(-d 22:10.211.55.4)`  
 
-* 第三方救援模式，唯一无须在原系统命令行下正常准备的模式，需进入厂商后台的rescue模式或加载live iso后执行脚本，自动检测到救援环境后原地dd(如检测不到也可强行-d 2强制救援并原地dd)（安装演示：[rescue](https://minlearn.org/inst/instnews/rescue) )  
+* 第三方救援模式，唯一无须在原系统命令行下正常准备的模式，需进入厂商后台的rescue模式或加载live iso后执行脚本，自动检测到救援环境后原地dd(如检测不到也可强行-d 2强制救援并原地dd)（安装演示：[rescue](https://www.inst.sh/docs/#/instnews-rescue) )  
 `curl -sSL inst.sh|bash -s - (-i xxx -p xxx) -t yourwindowsgz`
 
 > DEBUG模式下以```用户名为sshd密码为空```登录ssh 
@@ -118,7 +118,7 @@ curl -sSL inst.sh|bash -s - -选项名 选项值           -t 目标值
 windows/osx下用法(实验):   
 
  * 需下载并预先安装对应instsupports:（ win下载: [instsupportforwin.exe](https://github.com/minlearn/inst/releases/download/inital/instsupportforwin.exe) osx下载: [instsupportforosx.pkg](https://github.com/minlearn/inst/releases/download/inital/instsupportforosx.pkg) ）   
- * win安装完后打开桌面上生成的cygwin快捷方式输入脚本执行,osx安装完后在bash里输入脚本执行,(参数用法都大体与linux类似,不需-n默认强制静态) （安装演示：[windowssupport](https://minlearn.org/inst/instnews/windowssupport) [osxsupport](https://minlearn.org/inst/instnews/osxsupport) ）   
+ * win安装完后打开桌面上生成的cygwin快捷方式输入脚本执行,osx安装完后在bash里输入脚本执行,(参数用法都大体与linux类似,不需-n默认强制静态) （安装演示：[windowssupport](https://www.inst.sh/docs/#/instnews-windowssupport) [osxsupport](https://www.inst.sh/docs/#/instnews-osxsupport) ）   
 
 全量自托管inst:   
 
